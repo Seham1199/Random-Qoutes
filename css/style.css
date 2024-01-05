@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Assistant', sans-serif;
+}
+/* Start Animation */
+.layertop{
+    position: fixed;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    z-index: 55555555;
+    animation: 2s top;
+    animation-fill-mode: forwards;
+}
+.layerbtm{
+    position: fixed;
+    bottom: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    z-index: 55555555;
+    animation: 2s bottom;
+    animation-fill-mode: forwards;
+}
+@keyframes top {
+    from{
+        top: 50%;
+    }
+    to{
+        top: 100%;
+        opacity: 0;
+    }
+}
+@keyframes bottom {
+    from{
+        bottom: 50%;
+    }
+    to{
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+.home .content{
+    width: 600px;
+    /* height:600px; */
+}
+.home{
+    background-image: url("../images/home.jpg");
+    background-size: 100% 100%;
+}
+.card-img{
+    object-fit: cover;
+}
+.home h1{
+    font-size: 35px;
+}
+.home .overlay{
+ background-color: rgba(0, 0, 0, 0.4);
+}
+@media (max-width:767px) {
+.home h1{
+    font-size: 25px;
+} 
+.home p{
+    font-size: 30px !important; 
+} 
+}
+@media (max-width:476px) {
+
+.home .overlay{
+    padding: 1.5rem  !important;
+}  
+.home p{
+    padding: 1.5rem  !important ;
+    font-size: 25px !important;
+} 
+}
+@media (max-width:320px){
+.home h1{
+    padding: 10px 0px 0px 20px;
+}
+.home .overlay{
+padding: 0rem  !important;
+} 
+.home p{
+    padding: 1rem  !important ;
+} 
+}

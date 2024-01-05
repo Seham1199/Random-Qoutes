@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Barlow:wght@600&family=Cairo:wght@200;300;400;500;600;700;800&family=Dosis:wght@200;300;400;500;600;700;800&family=Encode+Sans+Expanded:wght@300&family=Inter:wght@600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@500&family=Work+Sans:wght@200;300;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Random Quotes</title>
+</head>
+<body>
+
+ <div class="layertop"></div>
+ <div class="layerbtm"></div>
+ 
+ 
+
+   <section class="home  w-100 vh-100 pt-1 d-flex align-items-center ">
+    <div class="container-md  d-flex  justify-content-center ">
+        <div class="content  rounded-4   pt-1  ">
+            <div class="card-img position-relative">
+              <img id="iamge" src="images/4.jpg" class="w-100 h-100  rounded-4" />
+              <div class="overlay position-absolute w-100 h-100 top-0 start-0 text-white p-5  rounded-4 ">
+      
+                  <div class="">
+                      <h1>Quote of the Day!</h1>
+                      <p id="ranQoute" class="h1 fw-bolder py-5 fst-italic text-center">" Along with success comes a reputation for wisdom. "</p>
+                      <span id="auther" class="h5 text-uppercase text-center d-block fw-semibold ">euripides</span>
+                         
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="main-btn mt-3 ">
+                <button onclick="getQoutes()" class="btn   bg-info d-block mx-auto text-uppercase py-2 fw-semibold 
+                border-0">get qoute</button>
+              </div>
+          </div>
+    </div>
+   
+   </section>
+   
+
+
+
+
+   <script src="js/script.js"></script>
+</body>
+</html>
